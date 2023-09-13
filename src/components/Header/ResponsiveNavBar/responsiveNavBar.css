@@ -1,0 +1,32 @@
+.responseNavBarContainer{
+    display: none;
+}
+
+.respNavImgCont>img{
+    width:175px;
+}
+
+.respNavIconCont{
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+.respNavIconCont:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 751px) {
+    .responseNavBarContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 15px 50px ;
+        align-items: center;
+        position: fixed;
+        background-color: rgb(245, 245, 245);
+        z-index: 1;
+    }
+}

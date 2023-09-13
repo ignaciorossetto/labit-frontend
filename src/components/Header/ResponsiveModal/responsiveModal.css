@@ -1,0 +1,140 @@
+.respNavModalCont{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.587);
+    color: black;
+    z-index: 2;
+    display: flex;
+}
+
+.respNavModalLinksMainCont{
+    width: 50%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.respNavModalLinksContLogo{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.respNavModalLinksContLogo>img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.respNavModalCrossIcon{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.respNavModalCrossIcon:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+.respNavModalLinksCont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.respNavModalAuthCont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.respNavModalLinksCont>a{
+    width: fit-content;
+    text-decoration: none;
+    color: #4E87F7;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.respNavModalLinksCont>a:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.respNavModalAuthCont>a{
+    width: fit-content;
+    text-decoration: none;
+    color: #4E87F7;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.respNavModalAuthCont>.respNavModalAuthCont_signup{
+    background-color: #4EF7BA;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    color: #060F6F;
+    font-weight: 600;
+}
+.respNavModalAuthCont>.respNavModalAuthCont_login{
+    background-color: #060F6F;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    color: #4EF7BA;
+    font-weight: 600;
+}
+
+.respNavModalAuthCont_user{
+    background-color: #060F6F;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #4EF7BA;
+}
+
+.respNavModalAuthCont_user_a{
+    margin-left: 5px;
+}
+
+.respNavModalAuthCont_logout{
+    margin-left: 10px;
+    color:red;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.respNavModalAuthCont_logout:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.respNavModalAuthCont>a:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.respNavBarInvToggle{
+    width: 50%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.respNavModalAuthCont{
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 751px) {
+    .respNavModalCont{
+        display: none;
+    }
+}

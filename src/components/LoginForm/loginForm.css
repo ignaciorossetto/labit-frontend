@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Raleway:wght@800&display=swap');
+
+.login_container{
+    margin-top: 80px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login_form_spinner{
+    text-align: center;
+    color: #4E87F7;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form_title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: #060F6F;
+}
+
+.login_form_inputs_container {
+    color: #4E87F7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+.login_form_inputLabel_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.login_form_inputLabel_container>label {
+    margin-left: 5px;
+}
+
+.login_form_input{
+    border-radius: 10px;
+    color: #4E87F7;
+    font-size: 20px;
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #4E87F7;
+    border-radius: 12px;
+    outline: none;
+}
+
+.errorInputBorder{
+    border: 1px solid #FC1E1E;
+}
+
+.login_form_submitBtn {
+    cursor: pointer;
+    background-color: #4EF7BA;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px 0;
+    color: #060F6F;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+}
+
+.login_form_submitBtn:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.05);
+}
+
+.login_form_submitBtn:active{
+    transition: all 0.2s ease;
+    transform: scale(0.90);
+    background-color: #214839;
+    color: #ffffff;
+}
+
+
+.login_form_signUpLink {
+    text-decoration: none;
+    color: #060F6F;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login_form_signUpSpan{
+    text-decoration: none;
+    color: #060F6F;
+    border-bottom: 1px solid #060F6F;
+}
+
+
+.login_form_error{
+    font-style: italic;
+    color: red;
+}
+
+.login_form_input::placeholder{
+    font-style: italic;
+    padding-left: 5px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .login_form_title{
+        text-align: center;
+    }
+    .login_form_inputLabel_container{
+        width: 100%;
+    }
+    .login_form_inputLabel_container{
+        padding: 0px ;
+    }
+    .login_form_input{
+        width: 100%;
+    }  
+    .login_form_submitBtn_container{
+        width: 100%;
+        padding: 0px ;
+    }
+    .login_form_submitBtn{
+        width: 100%;
+    }
+}
+
+
+

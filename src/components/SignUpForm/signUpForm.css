@@ -1,0 +1,418 @@
+.signUpFormContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.signUpForm{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.signUpForm_title{
+    color:#060F6F;
+    text-align: center;
+}
+
+.sinUpFormGrid{
+    display: grid;
+    justify-items: center;
+    grid: auto / 50% 50%;
+    gap: 10px 5px;
+    padding: 0 20px;
+}
+
+.signUpFormInputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap:5px;
+    justify-content: center;
+}
+
+.signUpFormInputContainer>label{
+    color: #4E87F7;
+    font-weight: 600;
+    font-size: 20px;
+}
+.signUpFormInputContainer>label>span{
+    color: #4E87F7;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+}
+.signUpFormInputContainer>input{
+    color: #4E87F7;
+    border: 1px solid #4E87F7;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.signUpFormInputContainer>select{
+    color: #4E87F7;
+    border: 1px solid #4E87F7;
+    padding: 8px 30px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.signUpFormInput_error{
+    color: red;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.termsCheckbox{
+    margin-top: -15px;
+    text-align: center;
+}
+
+.signUpFormMedInsOptsContainer{
+    align-self: center;
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 20px 40px;
+    box-shadow: 0px 10px 10px 0px #060F6F;
+    color: #060F6F;
+}
+
+.signUpFormMedInsOptsContainer>div{
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.signUpFormMedInsOptsContainer>div:hover{
+    background-color: #4e86f787;
+    transition: all 0.2s ease;
+    color: white;
+    border-radius: 15px;
+    transform: scale(1.1);
+}
+
+.signUpFormMedInsOpts{
+    padding: 5px 13px;
+
+}
+
+.signUpFormMedInsOpts_divider{
+    width: 1px;
+    background-color:#060F6F;
+}
+
+.signUpFormMedInsOpts_active{
+    background-color: #060F6F!important;
+    color: #4EF7BA!important;
+    border-radius: 15px;
+    font-weight: 800;
+}
+
+
+
+.signUpFormInputPassContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.signUpFormInputContainer_pass{
+    width: 42.5%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.signUpFormInputContainer_pass>label{
+    color: #4E87F7;
+    font-weight: 600;
+    font-size: 20px;
+}
+.signUpFormInputContainer_pass>input{
+    color: #4E87F7;
+    border: 2px solid #4EF7BA;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.signUpFormPassRules{
+    font-style: italic;
+    color: #060F6F;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.signUpFormInputContainer_checkbox{
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    color: #4E87F7;
+    font-size: 20px;
+}
+
+.signUpFormInputContainer_checkbox>input{
+    border: 2px solid #4e87f7 !important;
+    
+}
+
+.signUpFormInputContainer_submit{
+    display: flex;
+    align-self: center;
+    width: 80%;
+    justify-content: center;
+    background-color:#4E87F7;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.signUpFormInputContainer_submit:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.singUpFormSelectCont{
+    width: 600px;
+    height: 400px;
+    padding: 10px 20px;
+    align-self: center;
+    background-color: #060F6F;
+    margin-top: -10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+}
+.singUpFormSelectCont>div{
+    width:50%
+}
+
+.singUpFormSelectCont_{
+    padding: 20px;
+    color: #060F6F;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.singUpFormSelectOptsCont{
+    display: flex;
+    flex-direction:column;
+    overflow-y: scroll;
+    border: 1px solid #060F6F;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.singUpFormSelectOptsCont::-webkit-scrollbar{
+    width: 10px;
+    background-color:transparent !important;
+    padding: 10px;
+}
+
+
+  .singUpFormSelectOptsCont::-webkit-scrollbar-thumb {
+    background-color:#060F6F;
+    border-radius: 50px;
+  }
+
+.singUpFormSelectOptsCont>span{
+    padding: 5px 0 5px 10px;
+    cursor: pointer;
+}
+
+.singUpFormSelectOptsCont>span:hover{
+    background-color:#4E87F7;
+    border-radius: 10px;
+}
+
+.singUpFormSelecConfCont{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.singUpFormSelecConfCont>h3{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+.singUpFormSelecConfCont>p{
+    color: white;
+    font-weight: 800;
+}
+
+.singUpFormSelecConfCont>input{
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #060F6F;
+    font-weight: 600;
+}
+
+.singUpFormSelecConfCont>div{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #4EF7BA;
+    color: #060F6F;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.singUpFormSelecConfCont>div:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.singUpFormSelecConfCont>div:active{
+    transform: scale(1.0);
+    transition: all 0.1s ease;
+}
+
+.signUpSelectedInsCont_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-self: center;
+    width: 100%;
+}
+
+.signUpSelectedInsCont_title{
+    text-align: center;
+    color: #060F6F;
+}
+
+.signUpSelectedInsCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 0px #060F6F;
+}
+
+.signUpSelectedInsCont>div{
+    padding: 5px 10px;
+    color: #060F6F;
+    font-weight: 600;
+}
+
+.signUpSelectedInsCont_ins{
+    text-align: center;
+    background-color:#4EF7BA;
+    border-radius: 20px;
+    padding: 5px 40px!important;
+}
+
+.signUpSelectedInsCont_modify{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.signUpSelectedInsCont_modify:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.signUpForm_loading{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #060F6F;
+    min-height: 500px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .sinUpFormGrid{
+        grid: auto / 100%;
+        gap: 20px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .signUpFormInputContainer{
+        width: 90%;
+        gap:10px;
+    }
+
+    .signUpFormMedInsOptsContainer{
+        position: relative;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 0px #060F6F;
+    }
+    .signUpFormMedInsOpts_divider{
+        height: 1px;
+        width: 100%;
+        text-align: center;
+    }
+    .signUpFormInputPassContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .signUpFormInputPassContainer>div{
+        width: 87%;
+    }
+
+
+    .signUpFormInputContainer_checkbox{
+        padding: 30px;
+        align-self: center;
+    }
+
+    .singUpFormSelectCont{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .signUpFormInsLoadingSpinner{
+        text-align: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .singUpFormSelectCont_{
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .singUpFormSelectCont>div {
+        width: 100%;
+    }
+
+    .signUpSelectedInsCont{
+        width: 78%;
+    }
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

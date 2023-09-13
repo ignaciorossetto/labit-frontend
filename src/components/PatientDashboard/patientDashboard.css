@@ -1,0 +1,265 @@
+.pdDivider{
+    width: 2px;
+    background-color:#008FFF;
+    height: 100%;
+}
+.patientDashboardContainer{
+    width:100%;
+    max-width: 1024px;
+    min-height: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.pdWidth{
+    width: 50%;  
+}
+
+.pdInfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.pdInfoHeader{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 50px;
+    color: #060F6F;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.pdInfoHeader>div{
+    font-size: 48px;
+}
+
+.pdInfoHeaderArrowIcon{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pdInfoHeaderArrowIcon:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.pdInfoFirst{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pdInfoFirstIconCont{
+    position: relative;
+}
+
+.pdInfoFirstUserIcon{
+    padding: 30px;
+    background-color: #060F6F;
+    border-radius: 50%;
+    color: #4EF7BA;
+}
+
+.pdInfoFirstCamIcon{
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;  
+    transition: all 0.2s ease;
+}
+
+.pdInfoFirstCamIcon:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+.pdInfoFirstDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdInfoDetTitlecont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: #060F6F;
+}
+
+.pdInfoDetTitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+.pdInfoDetTitle_icon{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #060F6F;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.pdInfoDetTitle_icon:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1)
+
+}
+
+
+.pdInfoDetailsCont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pdInfoDetailsLabel{
+    color: #4E87F7;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pfInfoDetailsData{
+    color: #060F6F;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pdInfoSecond{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pdInfSecGroupCont{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pdInfSecGrpLabel{
+    padding-left: 10px;
+    color: #4E87F7;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pdInfSecGrpData{
+    padding: 10px;
+    width: 100%;
+    color: #060F6F;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px #4E87F7 solid;
+    border-radius: 20px;
+
+}
+
+.pdServices{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.pdServicesTitle{
+    font-size: 48px;
+    font-weight: 600;
+    color: #060F6F;
+    align-items: center;
+}
+
+.pdServicesBtnsCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.pdServices>div>div{
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    width: 85%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.pdServices>div>div:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+.pdServices>div>div:active{
+    transition: all 0.1s ease;
+    transform: scale(1.0);
+}
+
+.pdServicesGetAppmnt{
+    background-color:#4EF7BA;
+    color:#060F6F;  
+}
+
+.pdServicesGetInfo{
+    background-color:#060F6F;
+    color:white;  
+}
+
+@media only screen and (max-width: 750px) {
+    .pdWidth{
+        width: auto
+    }
+    .pdServices{
+        align-items: center;
+    }
+    .patientDashboardContainer{
+        flex-direction: column-reverse;
+    }
+
+    .pdInfoHeader{
+        display: none;
+    }
+
+    .pdServicesBtnsCont{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .pdServicesBtnsCont>div{
+        font-size: 20px!important;
+        padding:20px!important;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .pdServices{
+        width: 100%;
+        gap: 40px
+    }
+    .pdServicesBtnsCont{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pdInfoFirst{
+        flex-direction: column-reverse;
+    }
+}

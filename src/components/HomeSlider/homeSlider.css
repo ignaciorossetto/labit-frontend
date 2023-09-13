@@ -1,0 +1,34 @@
+.homeSliderContainer{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.homeSliderImg{
+    width: 100%;
+    height: auto;
+}
+
+.homeSliderArrow{
+    cursor: pointer;
+    color: white;
+    padding: 0 20px;
+}
+
+.homeSliderArrowLeft{
+    position: absolute;
+    top: 47%
+}
+
+.homeSliderArrowRight{
+    position: absolute;
+    top: 47%;
+    right: 0%;
+}
+
+@media only screen and (max-width: 750px) {
+    .homeSliderContainer{
+        display: none;
+    }
+}
+
