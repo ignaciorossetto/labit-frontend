@@ -22,7 +22,7 @@ const LoginForm = () => {
         setLoading(true)
           authContext.dispatch({type: LOGIN_PROCESS.START})
           try {
-          const response = await axios.post('https://institutoweb-hospital-backend.onrender.com/api/users/login', user)
+          const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users/login`, user)
           setLoading(false)
           authContext.dispatch({type: LOGIN_PROCESS.SUCCESS, payload: response.data.payload})
           console.log(response.data.payload)

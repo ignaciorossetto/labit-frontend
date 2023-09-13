@@ -68,7 +68,7 @@ const SignUpForm = () => {
                 medical_coverages_id: vars.medical_coverages_id
             }
         try {
-            const {data} = await axios.post('http://localhost:8000/api/users', obj)
+            const {data} = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users`, obj)
             console.log(data)
             setVars((prev)=>  ({
                 ...prev, loading_form: false}))
@@ -191,7 +191,7 @@ const SignUpForm = () => {
          const fetchIns = async() => {
             setVars((prev)=>  ({...prev, loading_insurance: true}))
             try {
-                const {data} = await axios.get('https://laboratorio-backend.onrender.com/api/medicalcoverages/')
+                const {data} = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/medicalcoverages/`)
                 setMedicalCovList(data.payload)
                 setVars((prev)=>  ({...prev, loading_insurance: false}))
             } catch (error) {

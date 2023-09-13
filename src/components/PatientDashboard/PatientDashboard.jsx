@@ -11,7 +11,7 @@ const PatientDashboard = () => {
     useEffect(()=> {
          const fetchPerson = async() => {
             try {
-                const {data} = await axios.get(`http://localhost:8000/api/persons/id/${user.person_id}`)
+                const {data} = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/persons/id/${user.person_id}`)
                 setPerson(data.payload)
                 
             } catch (error) {
