@@ -15,7 +15,7 @@ const PatientDashboard = () => {
                 setPerson(data.payload)
                 
             } catch (error) {
-                console.log(error)
+                alert('Los datos del usuario no se estan cargando por el momento...\nPor el momento estaran en blanco')
             }
          }
          fetchPerson()

@@ -12,7 +12,6 @@ const NavBar = () => {
     const [showSignUpBtn, setshowSignUpBtn] = useState(true)
 
     const handleShowSignUpBtn = (e) => {
-        console.log(e.target)
         if(e.target.id === 'signUpLink'){
             setshowSignUpBtn(false)
         } else {

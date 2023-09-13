@@ -69,7 +69,6 @@ const SignUpForm = () => {
             }
         try {
             const {data} = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users`, obj)
-            console.log(data)
             setVars((prev)=>  ({
                 ...prev, loading_form: false}))
             reset(data)
@@ -108,7 +107,6 @@ const SignUpForm = () => {
                 icon: 'error',
                 title: 'Hubo un error, intenta más tarde!'
             })          
-            console.log(error)
         }
     }
     const handleInsClick = (e) => {

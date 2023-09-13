@@ -25,7 +25,6 @@ const LoginForm = () => {
           const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/users/login`, user)
           setLoading(false)
           authContext.dispatch({type: LOGIN_PROCESS.SUCCESS, payload: response.data.payload})
-          console.log(response.data.payload)
           Swal.fire({
             toast: true,
             position: 'top-end',
