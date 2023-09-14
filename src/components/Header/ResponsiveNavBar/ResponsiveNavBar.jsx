@@ -9,6 +9,7 @@ const ResponsiveNavBar = (props) => {
     <div className='responseNavBarContainer'>
         <Link to='/' className='respNavImgCont'>
           <img src="/hospital_logo.png" alt="lab-logo" />
+          <div>LABIT</div>
         </Link>
         <div className='respNavIconCont' onClick={props.handleMenuClick}>
           <FontAwesomeIcon icon={faBars} size='2xl'/>

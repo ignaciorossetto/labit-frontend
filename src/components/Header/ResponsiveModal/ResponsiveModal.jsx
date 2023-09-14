@@ -18,7 +18,10 @@ const ResponsiveModal = ({handleMenuClick}) => {
           <div className='respNavModalLinksMainCont'>
             <div>
               <div className='respNavModalLinksContLogo'>
+                <div>
                 <img src="hospital_logo.png" alt="lab-logo" />
+                <div>LABIT</div>
+                </div>
                 <FontAwesomeIcon icon={faX} size='xl' className='respNavModalCrossIcon' onClick={handleMenuClick}/>
               </div>
               <div className='respNavModalLinksCont'>

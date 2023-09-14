@@ -32,9 +32,17 @@
     margin-bottom: 30px;
 }
 
-.respNavModalLinksContLogo>img{
-    width: 150px;
+.respNavModalLinksContLogo>div>img{
+    width: 60px;
     cursor: pointer;
+}
+.respNavModalLinksContLogo>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    color: #060F6F;
+    font-size: 30px;
 }
 
 .respNavModalCrossIcon{

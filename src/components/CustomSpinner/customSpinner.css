@@ -1,0 +1,15 @@
+@keyframes spinner {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  .customSpinner{
+    margin-top: 20px;
+    animation: spinner 1.5s linear infinite;
+    width: 40px;
+    height: 40px;
+  }

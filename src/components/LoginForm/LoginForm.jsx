@@ -7,6 +7,7 @@ import axios from 'axios'
 import { AuthContext } from '../../context/AuthContext'
 import { LOGIN_PROCESS } from '../../types/types'
 import Swal from 'sweetalert2'
+import CustomSpinner from '../CustomSpinner/CustomSpinner'
 
 const LoginForm = () => {
     const [user, setUser] = useState({
@@ -57,7 +58,10 @@ const LoginForm = () => {
           <h1 className="login_form_title">{loading ? 'Ingresando...' : 'Ingreso'}</h1>
         <form className='login_form' onSubmit={handleSubmitClick}>
             {
-              loading ? <FontAwesomeIcon icon={faSpinner} spin size='2xl'className='login_form_spinner' /> :
+              loading ? 
+              // <FontAwesomeIcon icon={faSpinner} spin size='2xl'className='login_form_spinner' /> 
+              <CustomSpinner src={'/hospital_logo.png'}/>
+              :
               <>
           <div className='login_form_inputs_container'>
                 <div className='login_form_inputLabel_container'>

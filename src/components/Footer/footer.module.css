@@ -9,6 +9,7 @@
 }
 .container{
         display: flex;
+        gap: 20px;
         width: 100%;
         background-color: #D9D9D9;
         align-items: center;
@@ -18,12 +19,25 @@
         justify-content: space-evenly;
 }
 
+.container_img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    color: #060F6F;
+    font-size: 30px;
+    flex-direction: column;
+}
+
     .img{
         width: 100px;
     }
     .footer{
-        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
+        padding: 10px;
     }
     .subtitulo, .text{
         color: #060F6F;
@@ -40,8 +54,10 @@
     }
     
     @media (min-width: 800px) {
+        .container_img{
+        }
         .img{
-            width: 150px;
+            width: 60x;
         }
         .footer{
             display: flex;
@@ -67,3 +83,5 @@
             font-size: 1em;
         }
     }
+
+

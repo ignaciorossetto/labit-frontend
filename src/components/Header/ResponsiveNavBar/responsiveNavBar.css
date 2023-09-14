@@ -1,9 +1,17 @@
 .responseNavBarContainer{
     display: none;
 }
+.respNavImgCont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    color: #060F6F;
+    font-size: 30px;
+}
 
 .respNavImgCont>img{
-    width:175px;
+    width:60px;
 }
 
 .respNavIconCont{
